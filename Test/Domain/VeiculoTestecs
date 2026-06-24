@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using API.Dominio.Entidades;
+
+
+namespace Test.Domain
+{
+    [TestClass]
+    public class VeiculoTeste
+    {
+       [TestMethod]
+        public void TestasGetSetPropriedades()
+        {
+            //arrange
+            var veiculo = new Veiculo();
+            //act
+            veiculo.Id = 1;
+            veiculo.Nome = "pejeut";
+            veiculo.Marca = "pejeut";
+            veiculo.Ano = "2020";
+
+            //Assert
+            Assert.AreEqual(1, adm.Id);
+            Assert.AreEqual("pejeut", adm.Email);
+            Assert.AreEqual("pejeut", adm.Senha);
+            Assert.AreEqual("2020", adm.Perfil);
+
+        } 
+    }
+}
